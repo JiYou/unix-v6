@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML><HEAD><TITLE>V6/usr/source/s7/run</TITLE></HEAD>
+<BODY BGCOLOR="#ffffff"><H1>V6/usr/source/s7/run</H1>
+<form action="/cgi-bin/unixtree.cgi" method="POST">
+<input type=hidden name=f value=V6/usr/source/s7/run>
+Find at most <select name="num">
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="20">20</option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="500">500</option></select>
+related files. <input type="submit" value="Search"><br>
+<input type="checkbox" name="incl" value="1">
+including files from this version of Unix.
+</form><hr>
+<pre>
+as suftab.s
+strip a.out
+cmp a.out /usr/lib/suftab
+cp a.out /usr/lib/suftab
+
+as roff?.s
+ld -s a.out -l
+cmp a.out /usr/bin/roff
+cp a.out /usr/bin/roff
+
+as nroff[1-5].s roff7.s nroff8.s
+ld -s -n a.out
+cmp a.out /usr/bin/nroff
+cp a.out /usr/bin/nroff
+
+yacc ne.g
+cc -s -O -n ne*.c -ly
+cmp a.out /usr/bin/neqn
+cp a.out /usr/bin/neqn
+
+rm y.tab.c *.o a.out
+
+
+
+
+
+
+
+
+
+
+</pre></body></html>
