@@ -1,2 +1,8 @@
 # unix-v6
-Unix-v6 源码注释
+
+《返璞归真:UNIX技术内幕》一书配套代码。
+
+# 联系方式
+
+作者博客：http://blog.chinaunix.net/uid/23741326/abstract/1.html
+
